@@ -1,0 +1,24 @@
+---
+export interface Props {
+	bgColor: string;
+  icon: string;
+}
+
+const { bgColor, icon } = Astro.props;
+---
+
+<div>
+	{icon}
+</div>
+
+<style define:vars={{bgColor}}>
+	div {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		font-size: 64px;
+    width: 100%;
+    aspect-ratio: 16 / 9;
+		background: var(--bgColor);
+	}
+</style>
