@@ -10,7 +10,7 @@ const { src, alt, href } = Astro.props;
 ---
 
 <a href={href} target="_blank" rel="noreferrer">
-	<Image src={src} alt={alt} width={36} format="avif" width={36} height={36}/>
+	<Image src={src} alt={alt} width={36} format="avif" width={72} height={72} fit="contain" loading="eager"/>
 </a>
 
 <style>
