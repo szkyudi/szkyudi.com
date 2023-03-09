@@ -1,0 +1,43 @@
+---
+import SnsIconLink from "./SnsIconLink.astro";
+---
+<ul role="list" class="sns-list">
+  <li>
+    <SnsIconLink
+      src="/images/twitter-icon.svg"
+      href="https://twitter.com/szkyudi"
+      alt="Twitterアカウントはこちら"
+    ></SnsIconLink>
+  </li>
+  <li>
+    <SnsIconLink
+      src="/images/github-icon.svg"
+      href="https://github.com/szkyudi"
+      alt="GitHubアカウントはこちら"
+    ></SnsIconLink>
+  </li>
+  <li>
+    <SnsIconLink
+      src="/images/qiita-icon.png"
+      href="https://qiita.com/szkyudi"
+      alt="Qiitaアカウントはこちら"
+    ></SnsIconLink>
+  </li>
+  <li>
+    <SnsIconLink
+      src="/images/zenn-icon.svg"
+      href="https://zenn.dev/szkyudi"
+      alt="Zennアカウントはこちら"
+    ></SnsIconLink>
+  </li>
+</ul>
+
+<style>
+  .sns-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 16px;
+    margin-top: 24px;
+  }
+</style>

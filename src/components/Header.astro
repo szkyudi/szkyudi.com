@@ -1,0 +1,30 @@
+---
+import Socials from './Socials.astro';
+import { Image } from '@astrojs/image/components';
+---
+<header>
+  <Image class="icon" src="/images/me.jpg" alt="すずきゆーだいのプロフィール画像" width={180} height={180} />
+  <h1 class="name">すずきゆーだい</h1>
+  <p class="description">
+    秋になると柿を200個食べるエンジニア
+  </p>
+  <Socials />
+</header>
+
+<style>
+  header {
+    text-align: center;
+  }
+  .name {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 12px;
+  }
+  .icon {
+    display: inline-block;
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    margin-bottom: 16px;
+  }
+</style>

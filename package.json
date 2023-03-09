@@ -10,7 +10,9 @@
     "astro": "astro"
   },
   "dependencies": {
+    "@astrojs/image": "^0.16.0",
     "astro": "^2.0.18",
-    "destyle.css": "^4.0.0"
+    "destyle.css": "^4.0.0",
+    "sharp": "^0.31.3"
   }
 }

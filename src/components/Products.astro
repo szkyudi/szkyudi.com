@@ -1,0 +1,68 @@
+---
+import Card from "./Card.astro";
+
+---
+
+<ul class="card-list">
+  <li>
+    <Card
+      href="https://warikan-dentaku.vercel.app/"
+      title="ばりわるくん"
+      description="多機能割り勘電卓"
+      icon="➗"
+    />
+  </li>
+  <li>
+    <Card
+      href="https://nstation.vercel.app/"
+      title="nStation"
+      description="指定駅からN駅以内を検索"
+      icon="🚉"
+    />
+  </li>
+  <li>
+    <Card
+      href="https://drawerjournal.com/jp"
+      title="引き出し日記のLP"
+      description="日記アプリの多言語LP制作"
+      icon="📔"
+    />
+  </li>
+  <li>
+    <Card
+      href="https://u-days.com"
+      title="U-DAYS"
+      description="JAMstackで作った技術ブログ"
+      icon="✏️"
+    />
+  </li>
+  <li>
+    <Card
+      href="https://developers.prtimes.jp/author/szkyudi/"
+      title="PR TIMES 開発者ブログ"
+      description="株式会社PR TIMESで書いた記事"
+      icon="🏢"
+    />
+  </li>
+</ul>
+
+<style>
+  .card-list {
+    margin-top: 32px;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 8px;
+  }
+  .card-list li {
+    white-space: nowrap;
+    overflow: hidden;
+  }
+  @media (min-width: 500px) {
+    .card-list {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+  .card-list li {
+    width: 100%;
+  }
+</style>
