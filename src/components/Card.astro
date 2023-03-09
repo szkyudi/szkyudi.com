@@ -10,18 +10,16 @@ const { href, title, description, icon } = Astro.props;
 ---
 
 <a href={href} target="_blank" rel="noreferrer">
-  <div>
-    <div class="icon">{icon}</div>
-    <div class="content">
-      <div class="title">{title}</div>
-      <div class="description">{description}</div>
-    </div>
+  <div class="icon">{icon}</div>
+  <div class="content">
+    <div class="title">{title}</div>
+    <div class="description">{description}</div>
   </div>
 </a>
 
 <style>
 	a {
-		display: block;
+		display: flex;
 		border-radius: 8px;
     border: 1px solid #888;
     overflow: hidden;
@@ -34,13 +32,14 @@ const { href, title, description, icon } = Astro.props;
 		display: flex;
 		justify-content: center;
 		align-items: center;
-		font-size: 64px;
-    width: 100%;
-    aspect-ratio: 16 / 9;
+		font-size: 32px;
+    width: 64px;
+    height: 64px;
 		background: #ddf;
 	}
   .content {
-    padding: 8px;
+    padding:  8px;
+    flex: 1;
   }
   .title {
     font-size: 16px;

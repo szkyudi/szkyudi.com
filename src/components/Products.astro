@@ -16,7 +16,7 @@ import Card from "./Card.astro";
     <Card
       href="https://nstation.vercel.app/"
       title="nStation"
-      description="指定駅からN駅以内を検索"
+      description="指定駅から3駅以内を検索"
       icon="🚉"
     />
   </li>
@@ -24,7 +24,7 @@ import Card from "./Card.astro";
     <Card
       href="https://drawerjournal.com/jp"
       title="引き出し日記のLP"
-      description="日記アプリの多言語LP制作"
+      description="多言語対応したLP"
       icon="📔"
     />
   </li>
@@ -32,7 +32,7 @@ import Card from "./Card.astro";
     <Card
       href="https://u-days.com"
       title="U-DAYS"
-      description="JAMstackで作った技術ブログ"
+      description="自作JAMstackブログ"
       icon="✏️"
     />
   </li>
@@ -40,7 +40,7 @@ import Card from "./Card.astro";
     <Card
       href="https://developers.prtimes.jp/author/szkyudi/"
       title="PR TIMES 開発者ブログ"
-      description="株式会社PR TIMESで書いた記事"
+      description="仕事で書いた記事"
       icon="🏢"
     />
   </li>
@@ -49,20 +49,12 @@ import Card from "./Card.astro";
 <style>
   .card-list {
     margin-top: 32px;
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 8px;
   }
   .card-list li {
     white-space: nowrap;
     overflow: hidden;
   }
-  @media (min-width: 500px) {
-    .card-list {
-      grid-template-columns: 1fr 1fr;
-    }
-  }
-  .card-list li {
-    width: 100%;
+  .card-list li + li {
+    margin-top: 8px;
   }
 </style>
