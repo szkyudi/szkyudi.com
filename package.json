@@ -13,6 +13,6 @@
     "@astrojs/image": "^0.18.0",
     "astro": "^2.0.18",
     "destyle.css": "^4.0.0",
-    "sharp": "^0.31.3"
+    "sharp": "^0.33.0"
   }
 }
