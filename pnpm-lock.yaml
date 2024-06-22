@@ -9,7 +9,7 @@ dependencies:
     specifier: ^0.18.0
     version: 0.18.0(astro@2.10.15)(sharp@0.31.3)
   astro:
-    specifier: ^2.10.15
+    specifier: ^2.0.18
     version: 2.10.15(sharp@0.31.3)
   destyle.css:
     specifier: ^4.0.0
