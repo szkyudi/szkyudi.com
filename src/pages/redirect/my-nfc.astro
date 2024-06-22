@@ -1,0 +1,28 @@
+---
+import Layout from "../../layouts/Layout.astro";
+---
+
+<Layout
+  title="すずきゆーだいのプロフィール"
+  description="秋になると柿を200個食べるエンジニア"
+  noindex={true}
+>
+  <main>
+    <p>読み込み中です</p>
+  </main>
+  <!-- NFCタグからのアクセスを計測するためのページのため、ページ読み込み後にトップページにリダイレクトする -->
+  <script>
+    setTimeout(() => {
+      location.href = "/";
+    }, 300);
+  </script>
+</Layout>
+
+<style>
+  main {
+    margin: auto;
+    max-width: 480px;
+    padding: 32px 16px;
+    margin: 0 auto;
+  }
+</style>

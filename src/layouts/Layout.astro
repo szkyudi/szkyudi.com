@@ -2,9 +2,10 @@
 export interface Props {
   title: string;
   description: string;
+  noindex?: boolean;
 }
 
-const { title, description } = Astro.props;
+const { title, description, noindex } = Astro.props;
 ---
 
 <!doctype html>
@@ -27,7 +28,7 @@ const { title, description } = Astro.props;
     <link rel="icon" type="image/svg+xml" href="/favicon.ico" />
     <meta name="generator" content={Astro.generator} />
     <meta name="description" content={description} />
-    <script type="module" src="/scripts/external-link-tracking.js"></script>
+    <meta name="robots" content={noindex ? "noindex" : "index"} />
     <title>{title}</title>
   </head>
   <body>
