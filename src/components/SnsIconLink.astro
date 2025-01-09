@@ -16,9 +16,8 @@ const { src, alt, href } = Astro.props;
     width={36}
     format="avif"
     quality={60}
-    width={72}
-    height={72}
-    fit="contain"
+    width={36}
+    height={36}
     loading="eager"
   />
 </a>
@@ -29,9 +28,14 @@ const { src, alt, href } = Astro.props;
     width: 36px;
     height: 36px;
     border-radius: 50%;
+    box-sizing: content-box;
+    border: 1px solid #888;
+    transition: box-shadow 0.1s ease-in-out;
   }
-  a:hover {
-    opacity: 0.6;
+  a:hover,
+  a:focus {
+    border-color: #fff;
+    box-shadow: 0 0 8px rgba(255, 255, 255, 0.125);
   }
   img {
     display: block;
