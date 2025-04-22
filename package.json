@@ -11,7 +11,7 @@
   },
   "dependencies": {
     "astro": "4.11.0",
-    "destyle.css": "4.0.0",
+    "destyle.css": "4.0.1",
     "sharp": "0.33.0"
   },
   "devDependencies": {
