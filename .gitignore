@@ -21,8 +21,8 @@ pnpm-debug.log*
 .DS_Store
 
 # Playwright
+# 注: e2e/screenshots/ は意図的に追跡する（PR/リポジトリでスクショを確認するため）
 /test-results/
 /playwright-report/
 /playwright/.cache/
 e2e/.results/
-e2e/screenshots/
