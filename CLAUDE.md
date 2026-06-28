@@ -9,13 +9,14 @@ Personal profile site (szkyudi.com) built with Astro. A single-page, statically-
 ## Commands
 
 ```bash
-npm run dev      # local dev server with HMR
-npm run build    # static build to ./dist/
-npm run preview  # serve the production build locally
-npm run astro check   # type-check .astro files
+pnpm dev          # local dev server with HMR
+pnpm build        # static build to ./dist/
+pnpm preview      # serve the production build locally
+pnpm astro check  # type-check .astro files
+pnpm e2e          # Playwright E2E (PC/mobile screenshots)
 ```
 
-Both `package-lock.json` and `pnpm-lock.yaml` exist; pick one package manager and keep its lockfile in sync.
+This project uses **pnpm** (`packageManager` field in `package.json`; `pnpm-lock.yaml` is the only lockfile). Vercel also builds with pnpm. Do **not** add `package-lock.json` back — a second lockfile desyncs on dependency changes and breaks Vercel preview builds.
 
 ## Architecture
 
