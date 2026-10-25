@@ -1,0 +1,79 @@
+---
+import Layout from "../../layouts/Layout.astro";
+---
+
+<!-- Insert Prompt Uploader の利用規約。OAuth 同意画面の App Domain 欄（Terms of Service）に掲載するためのページ -->
+<Layout
+  title="Terms of Service — Insert Prompt Uploader"
+  description="Insert Prompt Uploader の利用規約"
+  noindex={true}
+>
+  <main>
+    <h1>Terms of Service — Insert Prompt Uploader</h1>
+    <p>Last updated: 2026-10-26</p>
+
+    <h2>Scope</h2>
+    <p>
+      Insert Prompt Uploader is a private tool operated by the owner of the YouTube channel
+      <a href="https://www.youtube.com/@insertprompt">Insert Prompt (@insertprompt)</a> for managing that channel. It is
+      not offered as a service to anyone else, and no one other than the owner may sign in to it.
+    </p>
+
+    <h2>Use of YouTube</h2>
+    <p>
+      The tool uses YouTube API Services. By using it, the owner agrees to be bound by the
+      <a href="https://www.youtube.com/t/terms">YouTube Terms of Service</a> and the
+      <a href="https://policies.google.com/privacy">Google Privacy Policy</a>.
+    </p>
+
+    <h2>Content</h2>
+    <p>
+      Only the owner's own content is uploaded. The owner is responsible for that content and for complying with YouTube's
+      Community Guidelines, including disclosure of AI-generated or altered content.
+    </p>
+
+    <h2>Privacy</h2>
+    <p>How Google user data is handled is described in the <a href="/insert-prompt/privacy">Privacy Policy</a>.</p>
+
+    <h2>No warranty</h2>
+    <p>The tool is provided as is, without warranty of any kind.</p>
+
+    <h2>Changes and contact</h2>
+    <p>
+      These terms may be updated on this page. Questions: <a href="https://x.com/szkyudi">@szkyudi on X</a>.
+    </p>
+
+    <h2 lang="ja">日本語（要約）</h2>
+    <p lang="ja">
+      本ツールはチャンネル「Insert Prompt」の所有者が自分のチャンネルを管理するための個人用ツールで、所有者以外は利用できません。
+      YouTube API サービスを利用しており、YouTube 利用規約と Google プライバシーポリシーに従います。アップロードするのは所有者自身のコンテンツのみで、その責任は所有者が負います。
+      データの扱いは<a href="/insert-prompt/privacy">プライバシーポリシー</a>をご覧ください。本ツールは現状有姿で提供され、いかなる保証もありません。
+    </p>
+    <p><a href="/insert-prompt">Insert Prompt Uploader</a></p>
+  </main>
+</Layout>
+
+<style>
+  main {
+    max-width: 40rem;
+    margin: 0 auto;
+    padding: 3rem 1rem;
+    line-height: 1.8;
+  }
+  h1 {
+    font-size: 1.6rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+  }
+  h2 {
+    font-size: 1.15rem;
+    font-weight: bold;
+    margin: 2rem 0 0.75rem;
+  }
+  p {
+    margin-bottom: 1rem;
+  }
+  a {
+    text-decoration: underline;
+  }
+</style>
