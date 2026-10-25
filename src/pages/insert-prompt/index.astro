@@ -1,0 +1,67 @@
+---
+import Layout from "../../layouts/Layout.astro";
+---
+
+<!-- Google OAuth アプリ「Insert Prompt Uploader」のホームページ。OAuth 同意画面の審査要件（機能説明とプライバシーポリシーへのリンク）を満たすためのページ -->
+<Layout
+  title="Insert Prompt Uploader"
+  description="Insert Prompt チャンネルの所有者が、自分の YouTube チャンネルへ動画をアップロード・予約するための個人用ツール"
+>
+  <main>
+    <h1>Insert Prompt Uploader</h1>
+    <p>
+      Insert Prompt Uploader is a private, single-user tool run by the owner of the YouTube channel
+      <a href="https://www.youtube.com/@insertprompt">Insert Prompt | Pixel Art (@insertprompt)</a>.
+      It is not offered to anyone else.
+    </p>
+    <h2>What it does</h2>
+    <ul>
+      <li>Uploads the owner's own 8-bit pixel-art Shorts and work/study music videos to the owner's channel, as private videos.</li>
+      <li>Sets their titles, descriptions, translations and thumbnails, and schedules when they go public.</li>
+      <li>Reads view counts and analytics of the owner's own videos, to decide the publishing order.</li>
+      <li>Reads comments on the owner's videos and posts the owner's own replies.</li>
+    </ul>
+    <p>
+      The tool signs in with Google (OAuth) only to the owner's own account. Tokens are stored on the owner's computer
+      only and never shared.
+    </p>
+    <p><a href="/insert-prompt/privacy">Privacy Policy</a></p>
+
+    <h2 lang="ja">日本語</h2>
+    <p lang="ja">
+      Insert Prompt Uploader は、YouTube チャンネル「Insert Prompt」の所有者が自分のチャンネルの動画をアップロード・予約・集計するための個人用ツールです。
+      所有者以外は利用できません。Google アカウントへの接続は所有者本人のアカウントだけで、認証情報は所有者のパソコンにのみ保存し、第三者に提供しません。
+      詳しくは<a href="/insert-prompt/privacy">プライバシーポリシー</a>をご覧ください。
+    </p>
+  </main>
+</Layout>
+
+<style>
+  main {
+    max-width: 40rem;
+    margin: 0 auto;
+    padding: 3rem 1rem;
+    line-height: 1.8;
+  }
+  h1 {
+    font-size: 1.75rem;
+    font-weight: bold;
+    margin-bottom: 1.5rem;
+  }
+  h2 {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin: 2rem 0 0.75rem;
+  }
+  p,
+  ul {
+    margin-bottom: 1rem;
+  }
+  ul {
+    list-style: disc;
+    padding-left: 1.5rem;
+  }
+  a {
+    text-decoration: underline;
+  }
+</style>
