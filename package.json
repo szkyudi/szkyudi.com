@@ -16,7 +16,7 @@
     "e2e:report": "playwright show-report"
   },
   "dependencies": {
-    "astro": "4.11.0",
+    "astro": "4.16.19",
     "destyle.css": "4.0.0",
     "sharp": "0.33.0"
   },
